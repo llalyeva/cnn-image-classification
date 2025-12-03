@@ -1,0 +1,29 @@
+[project]
+name = "cnnclass"
+version = "0.1.0"
+description = "CNN training and inference pipeline"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Lala Aliyeva", email = "lala.aliyeva27@gmail.com" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "graphviz>=0.20.3",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.3",
+    "pillow>=11.1.0",
+    "torch>=2.6.0",
+    "torchview>=0.2.6",
+    "torchvision>=0.22.0",
+    "tqdm>=4.67.1",
+    "albumentations>=2.0.6",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["final_files", "output_predictions"]
